@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. apiCalls are under src>services
+2. React Components are under src>retail
+3. Http calls are made by axios to back-end using promises 
 
 ## Clone Project
 Open Terminal or Command Line
@@ -15,6 +18,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+!!!The application is also deployed in AWS for faster access
+http://draftkingsretail.s3-website-us-west-1.amazonaws.com
 
 ### api calls
 1.
