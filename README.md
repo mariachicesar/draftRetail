@@ -2,9 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Clone Project
+Open Terminal or Command Line
 
-In the project directory, you can run:
+git clone https://github.com/mariachicesar/draftRetail.git
+
 
 ### `npm start`
 
@@ -14,57 +16,276 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### api calls
+1.
+Get Array List from AssginedCoupons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://x8ki-letl-twmt.n7.xano.io/api:Z-_eHuah/assignedcoupon
+[
+  {
+    "id": 1,
+    "customer_id": 4,
+    "created_at": 1649377263595,
+    "coupon_id": 6
+  },
+  {
+    "id": 2,
+    "customer_id": 4,
+    "created_at": 1649377324655,
+    "coupon_id": 5
+  },
+  {
+    "id": 3,
+    "customer_id": 4,
+    "created_at": 1649377333491,
+    "coupon_id": 1
+  },
+  {
+    "id": 4,
+    "customer_id": 4,
+    "created_at": 1649377342602,
+    "coupon_id": 4
+  },
+  {
+    "id": 5,
+    "customer_id": 4,
+    "created_at": 1649377358493,
+    "coupon_id": 2
+  },
+  {
+    "id": 6,
+    "customer_id": 3,
+    "created_at": 1649377374756,
+    "coupon_id": 5
+  },
+  {
+    "id": 7,
+    "customer_id": 3,
+    "created_at": 1649377394162,
+    "coupon_id": 4
+  },
+  {
+    "id": 8,
+    "customer_id": 2,
+    "created_at": 1649377410896,
+    "coupon_id": 3
+  },
+  {
+    "id": 9,
+    "customer_id": 0,
+    "created_at": 1649377421667,
+    "coupon_id": 0
+  }
+]
 
-### `npm run build`
+2.
+Get Array List from CouponsTable
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://x8ki-letl-twmt.n7.xano.io/api:Z-_eHuah/coupon
+[
+  {
+    "id": 1,
+    "description": "10% Coupon",
+    "unitPrice": 10,
+    "created_at": 1649376924811
+  },
+  {
+    "id": 2,
+    "description": "5% Refer a friend coupon",
+    "unitPrice": 5,
+    "created_at": 1649377006948
+  },
+  {
+    "id": 3,
+    "description": "20% Spend more than $100 Coupon",
+    "unitPrice": 20,
+    "created_at": 1649377028167
+  },
+  {
+    "id": 4,
+    "description": "15% Multi Discount",
+    "unitPrice": 15,
+    "created_at": 1649377049473
+  },
+  {
+    "id": 5,
+    "description": "3% Spring Sale Coupon",
+    "unitPrice": 3,
+    "created_at": 1649377074071
+  },
+  {
+    "id": 6,
+    "description": "15% Loyal Customer",
+    "unitPrice": 15,
+    "created_at": 1649377111931
+  }
+]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.
+Get Array List from Customer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://x8ki-letl-twmt.n7.xano.io/api:Z-_eHuah/customer
+[
+  {
+    "id": 2,
+    "yearly": 100,
+    "name": "Cesar",
+    "created_at": 1649377156430
+  },
+  {
+    "id": 3,
+    "yearly": 25,
+    "name": "Rafael",
+    "created_at": 1649377175354
+  },
+  {
+    "id": 4,
+    "yearly": 225,
+    "name": "Albert",
+    "created_at": 1649377187410
+  }
+]
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. This call does all the work by doing joins in the back-end
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://x8ki-letl-twmt.n7.xano.io/api:Z-_eHuah/customer_assigned_coupon
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[
+  {
+    "id": 2,
+    "yearly": 100,
+    "name": "Cesar",
+    "created_at": 1649377156430,
+    "_assignedcoupon_of_customer": [
+      {
+        "id": 8,
+        "customer_id": 2,
+        "created_at": 1649377410896,
+        "coupon_id": 3,
+        "_coupon": [
+          {
+            "id": 3,
+            "description": "20% Spend more than $100 Coupon",
+            "unitPrice": 20,
+            "created_at": 1649377028167
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "yearly": 225,
+    "name": "Albert",
+    "created_at": 1649377187410,
+    "_assignedcoupon_of_customer": [
+      {
+        "id": 1,
+        "customer_id": 4,
+        "created_at": 1649377263595,
+        "coupon_id": 6,
+        "_coupon": [
+          {
+            "id": 6,
+            "description": "15% Loyal Customer",
+            "unitPrice": 15,
+            "created_at": 1649377111931
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "customer_id": 4,
+        "created_at": 1649377324655,
+        "coupon_id": 5,
+        "_coupon": [
+          {
+            "id": 5,
+            "description": "3% Spring Sale Coupon",
+            "unitPrice": 3,
+            "created_at": 1649377074071
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "customer_id": 4,
+        "created_at": 1649377333491,
+        "coupon_id": 1,
+        "_coupon": [
+          {
+            "id": 1,
+            "description": "10% Coupon",
+            "unitPrice": 10,
+            "created_at": 1649376924811
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "customer_id": 4,
+        "created_at": 1649377342602,
+        "coupon_id": 4,
+        "_coupon": [
+          {
+            "id": 4,
+            "description": "15% Multi Discount",
+            "unitPrice": 15,
+            "created_at": 1649377049473
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "customer_id": 4,
+        "created_at": 1649377358493,
+        "coupon_id": 2,
+        "_coupon": [
+          {
+            "id": 2,
+            "description": "5% Refer a friend coupon",
+            "unitPrice": 5,
+            "created_at": 1649377006948
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "yearly": 25,
+    "name": "Rafael",
+    "created_at": 1649377175354,
+    "_assignedcoupon_of_customer": [
+      {
+        "id": 6,
+        "customer_id": 3,
+        "created_at": 1649377374756,
+        "coupon_id": 5,
+        "_coupon": [
+          {
+            "id": 5,
+            "description": "3% Spring Sale Coupon",
+            "unitPrice": 3,
+            "created_at": 1649377074071
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "customer_id": 3,
+        "created_at": 1649377394162,
+        "coupon_id": 4,
+        "_coupon": [
+          {
+            "id": 4,
+            "description": "15% Multi Discount",
+            "unitPrice": 15,
+            "created_at": 1649377049473
+          }
+        ]
+      }
+    ]
+  }
+]

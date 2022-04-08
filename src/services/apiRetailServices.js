@@ -35,4 +35,16 @@ let getAllCustomers = () => {
       return axios(config).then(onGlobalSuccess).catch(onGlobalError);
 }
 
-export { getAllAssignedCoupons, getAllCoupons, getAllCustomers}
+/*
+This Http Request joins CustomerDb, AssignedDb, CouponDB. 3 Seperate tables joing by left joins.
+Using the lookup table of AssignedDb
+*/
+let getAllDataOneCall = () => {
+    const config = {
+        method: "GET",
+        url: `https://x8ki-letl-twmt.n7.xano.io/api:Z-_eHuah/customer_assigned_coupon`,
+      };
+      return axios(config).then(onGlobalSuccess).catch(onGlobalError);
+}
+
+export { getAllAssignedCoupons, getAllCoupons, getAllCustomers, getAllDataOneCall}
