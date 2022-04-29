@@ -1,9 +1,5 @@
-# Getting Started with Create React App
+# Using Class and Functional Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-1. apiCalls are under src>services
-2. React Components are under src>retail
-3. Http calls are made by axios to back-end using promises 
 
 ## Clone Project
 Open Terminal or Command Line
